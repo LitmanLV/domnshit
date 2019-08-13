@@ -60,3 +60,25 @@ var li = document.querySelectorAll("li")[1];
 li.remove();
 
 document.querySelectorAll("li")[1].style.backgroundColor = "blue"
+
+//events
+window.onload = function (){
+    console.log("window loaded")
+    alert("Jūsu lapa ir gatava")
+}
+
+
+var btn  = document.querySelector("button");
+btn.onclick = function (){
+    console.log("Clicked");
+}
+
+btn.onclick = function(){
+    console.log("other click")
+}
+
+var p = document.querySelector ("p")
+p.onclick = function(){
+    console.log("Paragraph clicked")
+}
+console.log(btn)
