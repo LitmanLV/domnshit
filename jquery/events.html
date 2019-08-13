@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script>
+    $().ready(function(){
+        var count = 0;
+        $("button").click(
+            function(){
+                count++;
+                $("#output").append("<p>"+ count + ".New Row</p>")
+            }
+        )
+    })
+
+    $().ready(function(){
+        var count = 0;
+        $("button").click(
+            function(){
+                count++;
+                $("#output").append("<p>"+ count + ". " + $("input").val() + "</p>")
+                $("input").val("")
+            }
+        )
+    })
+    </script>
+</head>
+<body>
+    <input type="text">
+    <button>add new row</button>
+    <div id="output"></div>
+</body>
+</html>

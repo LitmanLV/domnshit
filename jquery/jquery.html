@@ -21,7 +21,13 @@ $(document).ready(function(){
 
         jQuery("#test1").text("this is catness");
 
+        $("#html-output").text($("#input").html())
+        $("#html-output").text($("#input").text())
 
+        $("li:first").append("!")
+        $("li").last().append("$")
+    
+        $("li:gt(1)").append(">2")
 })
 
     </script>
@@ -36,9 +42,11 @@ $(document).ready(function(){
         <li id="test5" class="last">fifth</li>
     </ol>
 </div>
+
 <p>here goes html</p>
 <pre id="html-output"></pre>
 <p>here goes text</p>
 <pre id="text-output"></pre>
+
 </body>
 </html>
