@@ -82,3 +82,16 @@ p.onclick = function(){
     console.log("Paragraph clicked")
 }
 console.log(btn)
+
+var p = document.querySelector ("p")
+function listener1(){
+    console.log("listener1")
+}
+
+var p = document.querySelector ("p")
+function listener2(){
+    console.log("listener2")
+}
+p.addEventListener.apply("click", listener1);
+p.addEventListener.apply("click", listener2);
+
