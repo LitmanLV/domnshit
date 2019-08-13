@@ -7,15 +7,15 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <script>
-    $().ready(function(){
-        var count = 0;
-        $("button").click(
-            function(){
-                count++;
-                $("#output").append("<p>"+ count + ".New Row</p>")
-            }
-        )
-    })
+    // $().ready(function(){
+    //     var count = 0;
+    //     $("button").click(
+    //         function(){
+    //             count++;
+    //             $("#output").append("<p>"+ count + ".New Row</p>")
+    //         }
+    //     )
+    // })
 
     $().ready(function(){
         var count = 0;
@@ -24,6 +24,14 @@
                 count++;
                 $("#output").append("<p>"+ count + ". " + $("input").val() + "</p>")
                 $("input").val("")
+
+            }
+        )
+        $("p").click(
+            function(){
+                var p = $(this)
+                console.log($(this))
+                p.css("text-decoration","line-through")
             }
         )
     })
