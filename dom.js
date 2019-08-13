@@ -101,5 +101,10 @@ function mouseDownli(){
 function mouseUpli(){
     console.log("Mouse Up");
 }
-p.addEventListener("mousedown", mouseDownli)
-p.addEventListener("mouseup", mouseUpli)
+p.addEventListener("mousedown", mouseDownli);
+p.addEventListener("mouseup", mouseUpli);
+
+setTimeout(function() {
+    p.removeEventListener("click", listener1)
+}, 2000)
+
