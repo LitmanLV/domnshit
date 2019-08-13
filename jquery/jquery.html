@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script>
+    // $(document).ready(function(){
+        
+    // });
+    // jQuery(document).ready(function(){
+        
+    // });
+//izsauc jquery
+$(document).ready(function(){
+        $("ol li").text("This overrides all li values");
+        $("li.other").html("This  <strong> contain </strong> html");
+        $("li.last").html("This  <i> meow </i> html");
+
+        jQuery("#test1").text("this is catness");
+})
+
+    </script>
+</head>
+<body>
+    <ol>
+        <li id="test1">test</li>
+        <li>next</li>
+        <li class="other">my</li>
+        <li class="other">fourth</li>
+        <li id="test5" class="last">fifth</li>
+    </ol>
+</body>
+</html>
