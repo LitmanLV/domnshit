@@ -95,3 +95,11 @@ function listener2(){
 p.addEventListener.apply("click", listener1);
 p.addEventListener.apply("click", listener2);
 
+function mouseDownli(){
+    console.log("Mouse Down");
+}
+function mouseUpli(){
+    console.log("Mouse Up");
+}
+p.addEventListener("mousedown", mouseDownli)
+p.addEventListener("mouseup", mouseUpli)
